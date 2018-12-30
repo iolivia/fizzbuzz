@@ -22,6 +22,7 @@ This repo is about implementing FizzBuzz in as many languages as possible.
 * Rust
 * Bash
 * Java
+* Scala
 
 ### Contributing
 If you feel like wasting an afternoon learning an [esoteric language](https://en.wikipedia.org/wiki/Esoteric_programming_language) (or even a normal one), or writing some tests, please submit a PR.
