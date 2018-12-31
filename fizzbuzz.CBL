@@ -3,7 +3,7 @@ PROGRAM-ID. FIZZBUZZ.
 
 DATA DIVISION.
 WORKING-STORAGE SECTION.
-01 CT PIC 999 VALUE 1.
+01 IV PIC 999 VALUE 1.
 01 FZ PIC 999 VALUE 1.
 01 BZ PIC 999 VALUE 1.
 
@@ -21,10 +21,10 @@ FIZZBUZZ-MAIN SECTION.
                 THEN DISPLAY "Buzz"
                         COMPUTE BZ = 0
                 ELSE
-                        DISPLAY CT
+                        DISPLAY IV
                 END-IF
         END-IF
-        ADD 1 TO CT
+        ADD 1 TO IV
         ADD 1 TO FZ
         ADD 1 TO BZ
    END-PERFORM
