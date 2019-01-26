@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-This XSL file can not be run directly. To "run" this file, open fizzbuzz.xml file via Firefox Browser directly
-If you are not using FireFox Browser, then first launch the python HTTP server (httpserver.sh),
-then navigate to http://localhost:8001/fizzbuzz.xml
+This XSL file can not be run directly. To "run" this file, open fizzbuzz.xml file via Firefox Browser. (does not work with Chrome unless the xml/xsl files are hosted on a webserver)
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/range">

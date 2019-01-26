@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="fizzbuzz.xsl"?>
 <!-- 
-To "run" fizzbuzz.xsl, open this file via Firefox Browser directly.
-If you are not using FireFox Browser, then first launch the python HTTP server (httpserver.sh)
-then navigate to localhost:8001/fizzbuzz.xml
+To "run" fizzbuzz.xsl, open this file via Firefox Browser directly. (does not work with Chrome unless the xml/xsl files are hosted on a webserver)
 -->
 <range>
     <int>1</int>
