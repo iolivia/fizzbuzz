@@ -31,6 +31,7 @@ This repo is about implementing FizzBuzz in as many languages as possible.
 * C#
 * VBScript
 * Julia
+* C
 * XML/XSL
 
 ### Contributing
