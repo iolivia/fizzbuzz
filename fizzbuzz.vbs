@@ -2,8 +2,8 @@ Option Explicit
 
 Dim i
 For i = 1 To 100
-	Dim divBy3: divBy3 = i mod 3
-	Dim divBy5: divBy5 = i mod 5
+	Dim divBy3: divBy3 = i mod 3 = 0
+	Dim divBy5: divBy5 = i mod 5 = 0
 	
 	If divBy3 And divBy5 Then 
 		WScript.Echo "FizzBuzz"
