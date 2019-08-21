@@ -33,6 +33,9 @@ This repo is about implementing FizzBuzz in as many languages as possible.
 * Julia
 * C
 * XML/XSL
+* F#
+* Erlang
+* Clojure
 * Dart
 
 ### Contributing
