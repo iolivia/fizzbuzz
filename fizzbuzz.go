@@ -1,24 +1,30 @@
 package main
 
-import (
-    "fmt"
-)
+import "fmt"
+
+func fizzbuzz(count int, nums chan string) {
+	defer close(nums)
+
+	for i := 1; i <= count; i++ {
+		switch {
+		case i%15 == 0:
+			nums <- "FizzBuzz"
+		case i%5 == 0:
+			nums <- "Buzz"
+		case i%3 == 0:
+			nums <- "Fizz"
+		default:
+			nums <- fmt.Sprint(i)
+		}
+	}
+}
 
 func main() {
+	nums := make(chan string)
 
-    for i := 1; i <= 100; i++ {
-        divBy3 := i%3 == 0
-        divBy5 := i%5 == 0
+	go fizzbuzz(100, nums)
 
-        if divBy3 && divBy5 {
-            fmt.Println("FizzBuzz")
-        } else if divBy3 {
-            fmt.Println("Fizz")
-        } else if divBy5 {
-            fmt.Println("Buzz")
-        } else {
-            fmt.Println(i)
-        }
-        
-    }
+	for num := range nums {
+		fmt.Println(num)
+	}
 }
