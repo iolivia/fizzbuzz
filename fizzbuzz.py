@@ -1,3 +1,6 @@
+# I made this on my own a while ago, this is a modified version of what I made
+# Pretty much just copy/pasted my code here
+
 from time import time
 from tqdm import tqdm
 
