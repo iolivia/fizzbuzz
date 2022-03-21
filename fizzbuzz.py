@@ -1,11 +1,12 @@
-for i in range(1, 101):
-    divBy3 = i % 3 == 0
-    divBy5 = i % 5 == 0
-    if divBy3 and divBy5:
-        print("FizzBuzz")
-    elif divBy3:
-        print("Fizz")
-    elif divBy5:
-        print("Buzz")
-    else:
-        print(i)
+# I made this on my own a while ago, this is a modified version of what I made
+# Pretty much just copy/pasted my code here
+
+from time import time
+from tqdm import tqdm
+
+start = time()
+final = ['FizzBuzz' if i%15==0 else 'Buzz' if i%3==0 else 'Fizz' if i%5==0 else str(i) for i in tqdm(range(1,101))]
+for i in final:
+    print(i)
+duration = time() - start
+print(f'Done! Took \u001b[92m{duration}\u001b[0m seconds.')
