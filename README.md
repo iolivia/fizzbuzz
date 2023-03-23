@@ -17,6 +17,7 @@ This repo is about implementing FizzBuzz in as many languages as possible.
 * Haskell
 * JavaScript (node)
 * LOLCODE
+* Perl
 * Prolog
 * Python3
 * Rust
