@@ -1,0 +1,10 @@
+ul
+  - i = 0
+  while ++i <= 100
+    li
+      if i % 3 && i % 5
+        = i
+      if i % 3 == 0
+        | Fizz
+      if i % 5 == 0
+        | Buzz
